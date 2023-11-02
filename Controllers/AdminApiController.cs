@@ -19,7 +19,7 @@ namespace FlightPlanner.Controllers
         private static readonly object _locker = new();
 
         public AdminApiController(
-            IFlightService flightService, 
+            IFlightService flightService,
             IMapper mapper,
             IEnumerable<IValidation> validators)
         {
@@ -74,7 +74,7 @@ namespace FlightPlanner.Controllers
             {
                 _flightService.DeleteFlightById(id);
             }
-            
+
             return Ok();
         }
     }
